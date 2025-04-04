@@ -85,8 +85,11 @@ const FakeData = () => {
     const [loading, setLoading] = React.useState(true);
     const [error, setError] = React.useState<string | null>(null);
     const [tableData, setTableData] = React.useState<DataType[]>([]);
+    const [selectedRowKeys, setSelectedRowKeys] = React.useState<React.Key[]>([]);
     const [isEditModalOpen, setIsEditModalOpen] = React.useState(false);
     const [selectedUser, setSelectedUser] = React.useState<DataType | null>(null);
+    const [isDeleteModalOpen, setIsDeleteModalOpen] = React.useState(false);
+    const [userToDelete, setUserToDelete] = React.useState<DataType | null>(null);
     const [form] = Form.useForm();
 
     const fetchData = async () => {
@@ -138,13 +141,46 @@ const FakeData = () => {
         message.info('Edit cancelled');
     };
 
+    const handleDelete = (record: DataType) => {
+        setUserToDelete(record);
+        setIsDeleteModalOpen(true);
+    };
+
+    const handleDeleteModalOk = async () => {
+        try {
+            if (userToDelete) {
+                // Here you would typically delete the data from your backend
+                const newData = tableData.filter(item => item.id !== userToDelete.id);
+                setTableData(newData);
+                message.success('User deleted successfully');
+            }
+            setIsDeleteModalOpen(false);
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (error) {
+            message.error('Failed to delete user');
+        }
+    };
+
+    const handleDeleteModalCancel = () => {
+        setIsDeleteModalOpen(false);
+        setUserToDelete(null);
+    };
+
+    // Add row selection configuration
+    const rowSelection = {
+        selectedRowKeys,
+        onChange: (newSelectedRowKeys: React.Key[]) => {
+            setSelectedRowKeys(newSelectedRowKeys);
+        },
+    };
+
     // Modify the columns array to update the Action column
     const actionColumn = columns.find(col => col.key === 'action');
     if (actionColumn) {
         actionColumn.render = (_, record) => (
             <Space size="middle">
                 <a onClick={() => handleEdit(record)}>Edit</a>
-                <a>Delete</a>
+                <a onClick={() => handleDelete(record)}>Delete</a>
             </Space>
         );
     }
@@ -165,6 +201,7 @@ const FakeData = () => {
     return (
         <div>
             <Table<DataType>
+                rowSelection={rowSelection}
                 columns={columns}
                 dataSource={tableData}
                 loading={loading}
@@ -223,6 +260,17 @@ const FakeData = () => {
                         </Select>
                     </Form.Item>
                 </Form>
+            </Modal>
+            <Modal
+                title="Delete User"
+                open={isDeleteModalOpen}
+                onOk={handleDeleteModalOk}
+                onCancel={handleDeleteModalCancel}
+                okText="Delete"
+                okButtonProps={{ danger: true }}
+            >
+                <p>Are you sure you want to delete user "{userToDelete?.name}"?</p>
+                <p>This action cannot be undone.</p>
             </Modal>
         </div>
     );

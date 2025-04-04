@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Space, Table, Tag, Alert } from 'antd';
+import { Space, Table, Tag, Alert, Modal, Form, Input } from 'antd';
 import type { TableProps } from 'antd';
 import "../App.scss";
 import Loader from '../basicUI/loading';
@@ -17,6 +17,11 @@ const ApiData = () => {
     const [users, setUsers] = useState<User[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const [selectedRows, setSelectedRows] = useState<React.Key[]>([]);
+    const [isEditModalVisible, setIsEditModalVisible] = useState(false);
+    const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
+    const [editingUser, setEditingUser] = useState<User | null>(null);
+    const [form] = Form.useForm();
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -39,6 +44,36 @@ const ApiData = () => {
                 setLoading(false);
             });
     }, []);
+
+    const handleEdit = (user: User) => {
+        setEditingUser(user);
+        form.setFieldsValue(user);
+        setIsEditModalVisible(true);
+    };
+
+    const handleDelete = (user: User) => {
+        setEditingUser(user);
+        setIsDeleteModalVisible(true);
+    };
+
+    const handleEditSubmit = () => {
+        form.validateFields().then(values => {
+            const updatedUsers = users.map(user =>
+                user.id === editingUser?.id ? { ...user, ...values } : user
+            );
+            setUsers(updatedUsers);
+            setIsEditModalVisible(false);
+            form.resetFields();
+        });
+    };
+
+    const handleDeleteConfirm = () => {
+        if (editingUser) {
+            const updatedUsers = users.filter(user => user.id !== editingUser.id);
+            setUsers(updatedUsers);
+            setIsDeleteModalVisible(false);
+        }
+    };
 
     const columns: TableProps<User>['columns'] = [
         {
@@ -80,14 +115,21 @@ const ApiData = () => {
         {
             title: 'Action',
             key: 'action',
-            render: () => (
+            render: (_, record) => (
                 <Space size="middle">
-                    <a>Edit</a>
-                    <a>Delete</a>
+                    <a onClick={() => handleEdit(record)}>Edit</a>
+                    <a onClick={() => handleDelete(record)}>Delete</a>
                 </Space>
             ),
         },
     ];
+
+    const rowSelection = {
+        selectedRowKeys: selectedRows,
+        onChange: (selectedRowKeys: React.Key[]) => {
+            setSelectedRows(selectedRowKeys);
+        },
+    };
 
     return (
         <div>
@@ -105,6 +147,10 @@ const ApiData = () => {
                 />
             ) : (
                 <Table<User>
+                    rowSelection={{
+                        type: 'checkbox',
+                        ...rowSelection,
+                    }}
                     columns={columns}
                     dataSource={users}
                     scroll={{ y: 500 }}
@@ -112,6 +158,36 @@ const ApiData = () => {
                     rowKey="id"
                 />
             )}
+            <Modal
+                title="Edit User"
+                open={isEditModalVisible}
+                onOk={handleEditSubmit}
+                onCancel={() => setIsEditModalVisible(false)}
+            >
+                <Form form={form} layout="vertical">
+                    <Form.Item name="name" label="Name">
+                        <Input />
+                    </Form.Item>
+                    <Form.Item name="username" label="Username">
+                        <Input />
+                    </Form.Item>
+                    <Form.Item name="email" label="Email">
+                        <Input />
+                    </Form.Item>
+                    <Form.Item name="website" label="Website">
+                        <Input />
+                    </Form.Item>
+                </Form>
+            </Modal>
+
+            <Modal
+                title="Delete User"
+                open={isDeleteModalVisible}
+                onOk={handleDeleteConfirm}
+                onCancel={() => setIsDeleteModalVisible(false)}
+            >
+                <p>Are you sure you want to delete {editingUser?.name}?</p>
+            </Modal>
         </div>
     );
 }
