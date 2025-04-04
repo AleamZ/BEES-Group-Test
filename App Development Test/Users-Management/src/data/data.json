@@ -1,0 +1,804 @@
+{
+    "users": [
+        {
+            "id": "USR001",
+            "name": "John Smith",
+            "balance": 1250.75,
+            "email": "john.smith@email.com",
+            "registration": "2024-02-15T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR002",
+            "name": "Emma Johnson",
+            "balance": 3420.50,
+            "email": "emma.j@email.com",
+            "registration": "2024-01-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR003",
+            "name": "Michael Brown",
+            "balance": 750.25,
+            "email": "michael.b@email.com",
+            "registration": "2024-01-25T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR004",
+            "name": "Sarah Wilson",
+            "balance": 4200.00,
+            "email": "sarah.w@email.com",
+            "registration": "2024-02-01T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR005",
+            "name": "David Lee",
+            "balance": 980.30,
+            "email": "david.lee@email.com",
+            "registration": "2024-02-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR006",
+            "name": "Lisa Anderson",
+            "balance": 2100.60,
+            "email": "lisa.a@email.com",
+            "registration": "2024-02-10T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR007",
+            "name": "James Taylor",
+            "balance": 3750.80,
+            "email": "james.t@email.com",
+            "registration": "2024-02-15T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR008",
+            "name": "Emily Davis",
+            "balance": 890.45,
+            "email": "emily.d@email.com",
+            "registration": "2024-02-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR009",
+            "name": "Robert Martinez",
+            "balance": 1500.00,
+            "email": "robert.m@email.com",
+            "registration": "2024-02-25T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR010",
+            "name": "Jennifer Lopez",
+            "balance": 5200.75,
+            "email": "jennifer.l@email.com",
+            "registration": "2024-03-01T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR011",
+            "name": "William Clark",
+            "balance": 3300.25,
+            "email": "william.c@email.com",
+            "registration": "2024-03-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR012",
+            "name": "Amanda White",
+            "balance": 950.60,
+            "email": "amanda.w@email.com",
+            "registration": "2024-03-10T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR013",
+            "name": "Thomas Moore",
+            "balance": 2800.90,
+            "email": "thomas.m@email.com",
+            "registration": "2024-03-15T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR014",
+            "name": "Jessica Brown",
+            "balance": 1750.30,
+            "email": "jessica.b@email.com",
+            "registration": "2024-03-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR015",
+            "name": "Daniel Wilson",
+            "balance": 4100.00,
+            "email": "daniel.w@email.com",
+            "registration": "2024-03-25T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR016",
+            "name": "Michelle Chen",
+            "balance": 2600.45,
+            "email": "michelle.c@email.com",
+            "registration": "2024-03-30T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR017",
+            "name": "Christopher Lee",
+            "balance": 1900.75,
+            "email": "chris.l@email.com",
+            "registration": "2024-04-01T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR018",
+            "name": "Ashley Johnson",
+            "balance": 3150.20,
+            "email": "ashley.j@email.com",
+            "registration": "2024-04-05T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR019",
+            "name": "Kevin Zhang",
+            "balance": 2300.60,
+            "email": "kevin.z@email.com",
+            "registration": "2024-04-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR020",
+            "name": "Rachel Green",
+            "balance": 1650.90,
+            "email": "rachel.g@email.com",
+            "registration": "2024-04-15T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR021",
+            "name": "Steven Black",
+            "balance": 4500.30,
+            "email": "steven.b@email.com",
+            "registration": "2024-04-20T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR022",
+            "name": "Laura Palmer",
+            "balance": 2800.15,
+            "email": "laura.p@email.com",
+            "registration": "2024-04-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR023",
+            "name": "Ryan Cooper",
+            "balance": 1950.45,
+            "email": "ryan.c@email.com",
+            "registration": "2024-05-01T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR024",
+            "name": "Sophie Turner",
+            "balance": 3600.80,
+            "email": "sophie.t@email.com",
+            "registration": "2024-05-05T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR025",
+            "name": "Brandon King",
+            "balance": 2750.25,
+            "email": "brandon.k@email.com",
+            "registration": "2024-05-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR026",
+            "name": "Maria Garcia",
+            "balance": 1850.70,
+            "email": "maria.g@email.com",
+            "registration": "2024-05-15T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR027",
+            "name": "Justin Time",
+            "balance": 4900.90,
+            "email": "justin.t@email.com",
+            "registration": "2024-05-20T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR028",
+            "name": "Karen White",
+            "balance": 2950.40,
+            "email": "karen.w@email.com",
+            "registration": "2024-05-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR029",
+            "name": "Peter Park",
+            "balance": 1750.60,
+            "email": "peter.p@email.com",
+            "registration": "2024-05-30T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR030",
+            "name": "Nancy Drew",
+            "balance": 3850.15,
+            "email": "nancy.d@email.com",
+            "registration": "2024-06-01T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR031",
+            "name": "Alice Cooper",
+            "balance": 2750.35,
+            "email": "alice.c@email.com",
+            "registration": "2024-06-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR032",
+            "name": "Brian Miller",
+            "balance": 1850.90,
+            "email": "brian.m@email.com",
+            "registration": "2024-06-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR033",
+            "name": "Catherine Wong",
+            "balance": 3950.25,
+            "email": "catherine.w@email.com",
+            "registration": "2024-06-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR034",
+            "name": "David Harris",
+            "balance": 2050.75,
+            "email": "david.h@email.com",
+            "registration": "2024-06-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR035",
+            "name": "Evelyn Scott",
+            "balance": 3150.40,
+            "email": "evelyn.s@email.com",
+            "registration": "2024-06-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR036",
+            "name": "Franklin Adams",
+            "balance": 2250.60,
+            "email": "franklin.a@email.com",
+            "registration": "2024-06-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR037",
+            "name": "Grace Lee",
+            "balance": 3350.80,
+            "email": "grace.l@email.com",
+            "registration": "2024-07-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR038",
+            "name": "Henry Clark",
+            "balance": 2450.90,
+            "email": "henry.c@email.com",
+            "registration": "2024-07-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR039",
+            "name": "Isabella King",
+            "balance": 3550.25,
+            "email": "isabella.k@email.com",
+            "registration": "2024-07-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR040",
+            "name": "Jackie Brown",
+            "balance": 2650.35,
+            "email": "jackie.b@email.com",
+            "registration": "2024-07-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR041",
+            "name": "Kevin White",
+            "balance": 3750.45,
+            "email": "kevin.w@email.com",
+            "registration": "2024-07-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR042",
+            "name": "Lily Green",
+            "balance": 2850.55,
+            "email": "lily.g@email.com",
+            "registration": "2024-07-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR043",
+            "name": "Michael Black",
+            "balance": 3950.65,
+            "email": "michael.b@email.com",
+            "registration": "2024-08-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR044",
+            "name": "Nina Brown",
+            "balance": 3050.75,
+            "email": "nina.b@email.com",
+            "registration": "2024-08-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR045",
+            "name": "Oscar White",
+            "balance": 4150.85,
+            "email": "oscar.w@email.com",
+            "registration": "2024-08-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR046",
+            "name": "Paul Green",
+            "balance": 3250.95,
+            "email": "paul.g@email.com",
+            "registration": "2024-08-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR047",
+            "name": "Quincy Black",
+            "balance": 4350.05,
+            "email": "quincy.b@email.com",
+            "registration": "2024-08-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR048",
+            "name": "Rachel White",
+            "balance": 3450.15,
+            "email": "rachel.w@email.com",
+            "registration": "2024-08-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR049",
+            "name": "Samuel Green",
+            "balance": 4550.25,
+            "email": "samuel.g@email.com",
+            "registration": "2024-09-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR050",
+            "name": "Tina Black",
+            "balance": 3650.35,
+            "email": "tina.b@email.com",
+            "registration": "2024-09-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR051",
+            "name": "Ursula White",
+            "balance": 4750.45,
+            "email": "ursula.w@email.com",
+            "registration": "2024-09-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR052",
+            "name": "Victor Green",
+            "balance": 3850.55,
+            "email": "victor.g@email.com",
+            "registration": "2024-09-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR053",
+            "name": "Wendy Black",
+            "balance": 4950.65,
+            "email": "wendy.b@email.com",
+            "registration": "2024-09-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR054",
+            "name": "Xander White",
+            "balance": 4050.75,
+            "email": "xander.w@email.com",
+            "registration": "2024-09-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR055",
+            "name": "Yvonne Green",
+            "balance": 5150.85,
+            "email": "yvonne.g@email.com",
+            "registration": "2024-10-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR056",
+            "name": "Zachary Black",
+            "balance": 4250.95,
+            "email": "zachary.b@email.com",
+            "registration": "2024-10-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR057",
+            "name": "Alice White",
+            "balance": 5350.05,
+            "email": "alice.w@email.com",
+            "registration": "2024-10-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR058",
+            "name": "Brian Green",
+            "balance": 4450.15,
+            "email": "brian.g@email.com",
+            "registration": "2024-10-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR059",
+            "name": "Catherine Black",
+            "balance": 5550.25,
+            "email": "catherine.b@email.com",
+            "registration": "2024-10-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR060",
+            "name": "David White",
+            "balance": 4650.35,
+            "email": "david.w@email.com",
+            "registration": "2024-10-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR061",
+            "name": "Evelyn Green",
+            "balance": 5750.45,
+            "email": "evelyn.g@email.com",
+            "registration": "2024-11-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR062",
+            "name": "Franklin Black",
+            "balance": 4850.55,
+            "email": "franklin.b@email.com",
+            "registration": "2024-11-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR063",
+            "name": "Grace White",
+            "balance": 5950.65,
+            "email": "grace.w@email.com",
+            "registration": "2024-11-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR064",
+            "name": "Henry Green",
+            "balance": 5050.75,
+            "email": "henry.g@email.com",
+            "registration": "2024-11-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR065",
+            "name": "Isabella Black",
+            "balance": 6150.85,
+            "email": "isabella.b@email.com",
+            "registration": "2024-11-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR066",
+            "name": "Jackie White",
+            "balance": 5250.95,
+            "email": "jackie.w@email.com",
+            "registration": "2024-11-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR067",
+            "name": "Kevin Green",
+            "balance": 6350.05,
+            "email": "kevin.g@email.com",
+            "registration": "2024-12-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR068",
+            "name": "Lily Black",
+            "balance": 5450.15,
+            "email": "lily.b@email.com",
+            "registration": "2024-12-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR069",
+            "name": "Michael White",
+            "balance": 6550.25,
+            "email": "michael.w@email.com",
+            "registration": "2024-12-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR070",
+            "name": "Nina Green",
+            "balance": 5650.35,
+            "email": "nina.g@email.com",
+            "registration": "2024-12-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR071",
+            "name": "Oscar Black",
+            "balance": 6750.45,
+            "email": "oscar.b@email.com",
+            "registration": "2024-12-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR072",
+            "name": "Paul White",
+            "balance": 5850.55,
+            "email": "paul.w@email.com",
+            "registration": "2024-12-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR073",
+            "name": "Quincy Green",
+            "balance": 6950.65,
+            "email": "quincy.g@email.com",
+            "registration": "2025-01-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR074",
+            "name": "Rachel Black",
+            "balance": 6050.75,
+            "email": "rachel.b@email.com",
+            "registration": "2025-01-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR075",
+            "name": "Samuel White",
+            "balance": 7150.85,
+            "email": "samuel.w@email.com",
+            "registration": "2025-01-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR076",
+            "name": "Tina Green",
+            "balance": 6250.95,
+            "email": "tina.g@email.com",
+            "registration": "2025-01-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR077",
+            "name": "Ursula Black",
+            "balance": 7350.05,
+            "email": "ursula.b@email.com",
+            "registration": "2025-01-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR078",
+            "name": "Victor White",
+            "balance": 6450.15,
+            "email": "victor.w@email.com",
+            "registration": "2025-01-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR079",
+            "name": "Wendy Green",
+            "balance": 7550.25,
+            "email": "wendy.g@email.com",
+            "registration": "2025-02-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR080",
+            "name": "Xander Black",
+            "balance": 6650.35,
+            "email": "xander.b@email.com",
+            "registration": "2025-02-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR081",
+            "name": "Yvonne White",
+            "balance": 7750.45,
+            "email": "yvonne.w@email.com",
+            "registration": "2025-02-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR082",
+            "name": "Zachary Green",
+            "balance": 6850.55,
+            "email": "zachary.g@email.com",
+            "registration": "2025-02-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR083",
+            "name": "Alice Black",
+            "balance": 7950.65,
+            "email": "alice.b@email.com",
+            "registration": "2025-02-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR084",
+            "name": "Brian White",
+            "balance": 7050.75,
+            "email": "brian.w@email.com",
+            "registration": "2025-03-01T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR085",
+            "name": "Catherine Green",
+            "balance": 8150.85,
+            "email": "catherine.g@email.com",
+            "registration": "2025-03-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR086",
+            "name": "David Black",
+            "balance": 7250.95,
+            "email": "david.b@email.com",
+            "registration": "2025-03-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR087",
+            "name": "Evelyn White",
+            "balance": 8350.05,
+            "email": "evelyn.w@email.com",
+            "registration": "2025-03-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR088",
+            "name": "Franklin Green",
+            "balance": 7450.15,
+            "email": "franklin.g@email.com",
+            "registration": "2025-03-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR089",
+            "name": "Grace Black",
+            "balance": 8550.25,
+            "email": "grace.b@email.com",
+            "registration": "2025-03-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR090",
+            "name": "Henry White",
+            "balance": 7650.35,
+            "email": "henry.w@email.com",
+            "registration": "2025-03-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR091",
+            "name": "Isabella Green",
+            "balance": 8750.45,
+            "email": "isabella.g@email.com",
+            "registration": "2025-04-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR092",
+            "name": "Jackie Black",
+            "balance": 7850.55,
+            "email": "jackie.b@email.com",
+            "registration": "2025-04-10T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR093",
+            "name": "Kevin White",
+            "balance": 8950.65,
+            "email": "kevin.w@email.com",
+            "registration": "2025-04-15T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR094",
+            "name": "Lily Green",
+            "balance": 8050.75,
+            "email": "lily.g@email.com",
+            "registration": "2025-04-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR095",
+            "name": "Michael Black",
+            "balance": 9150.85,
+            "email": "michael.b@email.com",
+            "registration": "2025-04-25T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR096",
+            "name": "Nina White",
+            "balance": 8250.95,
+            "email": "nina.w@email.com",
+            "registration": "2025-04-30T09:30:00.000Z",
+            "status": "inactive"
+        },
+        {
+            "id": "USR097",
+            "name": "Oscar Green",
+            "balance": 9350.05,
+            "email": "oscar.g@email.com",
+            "registration": "2025-05-05T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR098",
+            "name": "Xavier Thompson",
+            "balance": 2850.45,
+            "email": "xavier.t@email.com",
+            "registration": "2024-12-15T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR099",
+            "name": "Yolanda Martinez",
+            "balance": 3150.80,
+            "email": "yolanda.m@email.com",
+            "registration": "2024-12-20T09:30:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "USR100",
+            "name": "Zachary Wilson",
+            "balance": 2950.60,
+            "email": "zachary.w@email.com",
+            "registration": "2024-12-25T09:30:00.000Z",
+            "status": "inactive"
+        }
+    ]
+}
